@@ -31,6 +31,22 @@ public class Slide extends javax.swing.JFrame {
         btnMenu.setOpaque(false);
         btnMenu.setContentAreaFilled(false);
         btnMenu.setBorderPainted(false);
+        //
+        btnCuentas.setOpaque(false);
+        btnCuentas.setContentAreaFilled(false);
+        btnCuentas.setBorderPainted(false);
+        //
+        btnUsuarios.setOpaque(false);
+        btnUsuarios.setContentAreaFilled(false);
+        btnUsuarios.setBorderPainted(false);
+        //
+        btnBusquedas.setOpaque(false);
+        btnBusquedas.setContentAreaFilled(false);
+        btnBusquedas.setBorderPainted(false);
+         //
+        btnReportes.setOpaque(false);
+        btnReportes.setContentAreaFilled(false);
+        btnReportes.setBorderPainted(false);
     }
 
     /**
@@ -44,10 +60,10 @@ public class Slide extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnReportes = new javax.swing.JButton();
+        btnUsuarios = new javax.swing.JButton();
+        btnCuentas = new javax.swing.JButton();
+        btnBusquedas = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         btnMenu = new javax.swing.JButton();
         pnlBusqueda = new javax.swing.JPanel();
@@ -69,34 +85,38 @@ public class Slide extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 51));
         jPanel1.setBorder(null);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Checked Checkbox_48px_3.png"))); // NOI18N
-        jButton2.setBorderPainted(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton2.setIconTextGap(-1);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Checked Checkbox_48px_3.png"))); // NOI18N
+        btnReportes.setBorderPainted(false);
+        btnReportes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnReportes.setIconTextGap(-1);
+        btnReportes.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/ImagesHover/Checked Checkbox_60px.png"))); // NOI18N
+        btnReportes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnReportesActionPerformed(evt);
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Conference_48px_2.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Conference_48px_2.png"))); // NOI18N
+        btnUsuarios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/ImagesHover/Conference_60px.png"))); // NOI18N
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnUsuariosActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Money Bag_48px_2.png"))); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnCuentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Money Bag_48px_2.png"))); // NOI18N
+        btnCuentas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/ImagesHover/Money Bag_60px.png"))); // NOI18N
+        btnCuentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnCuentasActionPerformed(evt);
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Search_48px_2.png"))); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnBusquedas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/Images/Search_48px_2.png"))); // NOI18N
+        btnBusquedas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/SlideTest/ImagesHover/Search_60px.png"))); // NOI18N
+        btnBusquedas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnBusquedasActionPerformed(evt);
             }
         });
 
@@ -109,12 +129,12 @@ public class Slide extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton4))
+                        .addComponent(btnCuentas))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton5))
+                            .addComponent(btnReportes)
+                            .addComponent(btnUsuarios)
+                            .addComponent(btnBusquedas))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -122,13 +142,13 @@ public class Slide extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addComponent(jButton2)
+                .addComponent(btnReportes)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(btnUsuarios)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(btnCuentas)
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addComponent(btnBusquedas)
                 .addContainerGap(58, Short.MAX_VALUE))
         );
 
@@ -149,9 +169,9 @@ public class Slide extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(20, 20, 20)
                 .addComponent(btnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(770, Short.MAX_VALUE))
+                .addContainerGap(756, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,29 +199,29 @@ public class Slide extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnMenuActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
         // TODO add your handling code here:
        OcultaPaneles();
        MuestraPanel(pnlReportes);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnReportesActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
         // TODO add your handling code here:
           OcultaPaneles();
         MuestraPanel(pnlUsuarios);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnUsuariosActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuentasActionPerformed
 
         OcultaPaneles();
         MuestraPanel(pnlCuentas);        // TODO add your handling code here:     // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnCuentasActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnBusquedasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBusquedasActionPerformed
         //OcultaPaneles();
        MuestraPanel(pnlBusqueda);
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnBusquedasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,16 +264,12 @@ public class Slide extends javax.swing.JFrame {
         int y = panel.getY();
         int width = panel.getWidth();
         int height = panel.getHeight();
-        System.out.println("Y = "+ (y + height));
-        System.out.println("x = "+ (x + width));
-        System.out.println("Width: "+width);
         if (panel.isVisible()) {
              new Timer(1, new ActionListener() {
                public void actionPerformed(ActionEvent e) {
                   panel.setLocation(panel.getX() - 10, y);
                   if (panel.getX() + panel.getWidth() <= 0) {
                      ((Timer) e.getSource()).stop();
-               System.out.println("Timer stopped");
                panel.setVisible(false);
             }
                }
@@ -310,11 +326,11 @@ public class Slide extends javax.swing.JFrame {
     JPanel   pnlUsuarios = new javax.swing.JPanel();
     JPanel   pnlReportes = new javax.swing.JPanel();
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBusquedas;
+    private javax.swing.JButton btnCuentas;
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnReportes;
+    private javax.swing.JButton btnUsuarios;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
